@@ -1,6 +1,6 @@
 import '../globals.css'
 
-import { Inter as Font } from 'next/font/google'
+import { Manrope as Font } from 'next/font/google'
 import type { Metadata } from 'next'
 import { pay } from 'site.config'
 
