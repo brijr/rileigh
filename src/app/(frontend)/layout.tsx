@@ -1,4 +1,5 @@
 import '../globals.css'
+import '@/components/craft/craft.css'
 
 import { Manrope as Font } from 'next/font/google'
 import type { Metadata } from 'next'
@@ -36,12 +37,12 @@ const Footer = () => {
   return (
     <Section className="py-6 md:py-6">
       <Container className="py-6 md:py-6">
-        <footer className="text-muted-foreground">
-          <div className="flex gap-3">
+        <footer className="space-y-4 sm:flex sm:justify-between items-center">
+          <div className="flex gap-3 craft">
             <Link href="/linkedin">Linkedin</Link>
             <Link href="/resume">Resume</Link>
           </div>
-          <p>© {pay.name}, 2025</p>
+          <p className="text-muted-foreground">© {pay.name}, 2025</p>
         </footer>
       </Container>
     </Section>
