@@ -60,7 +60,7 @@ const Header = () => {
 
 const Footer = () => {
   return (
-    <Section className="fade-in-up delay-footer py-6 md:py-6">
+    <Section className="fade-in-up delay-footer py-6 md:py-6 text-sm">
       <Container className="py-6 md:py-6">
         <footer className="space-y-4 sm:flex sm:justify-between items-center">
           <div className="flex gap-3 craft">

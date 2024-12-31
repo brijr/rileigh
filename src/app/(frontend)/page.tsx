@@ -19,7 +19,7 @@ export default async function Index() {
 
 const Header = () => {
   return (
-    <Container>
+    <Container className="fade-in-up delay-header">
       <div className="max-w-xl space-y-8">
         <h1 className="text-xl font-medium">Rileigh Tower</h1>
         <h2 className="text-muted-foreground">
@@ -33,7 +33,7 @@ const Header = () => {
 
 const CaseStudies = ({ data }: { data: CaseStudy[] }) => {
   return (
-    <Container className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <Container className="fade-in-up delay-studies grid sm:grid-cols-2 md:grid-cols-3 gap-6">
       {data.map((study, index) => (
         <CaseStudyCard {...study} key={study.id || index} />
       ))}
