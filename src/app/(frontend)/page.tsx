@@ -15,10 +15,10 @@ const Header = () => {
     <Section>
       <Container>
         <div className="max-w-xl space-y-8">
-          <h1 className="text-xl">Rileigh Tower</h1>
+          <h1 className="text-xl font-medium">Rileigh Tower</h1>
           <h2 className="text-muted-foreground">
-            UX Researcher based in the Utah, passionate about creating accessible, intuitive, and
-            inclusive digital experiences.
+            UX Researcher and Anthropologist based in the Utah. Passionate about creating
+            accessible, intuitive, and inclusive digital experiences based on user insights.
           </h2>
         </div>
       </Container>
