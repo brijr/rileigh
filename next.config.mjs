@@ -11,7 +11,7 @@ const nextConfig = {
       },
       {
         source: '/resume',
-        destination: 'https://resume.rileigh.me',
+        destination: 'https://read.cv/rileigh',
         permanent: true,
       },
     ]

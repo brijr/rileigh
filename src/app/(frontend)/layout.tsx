@@ -64,7 +64,7 @@ const Footer = () => {
       <Container className="py-6 md:py-6">
         <footer className="space-y-4 sm:flex sm:justify-between items-center">
           <div className="flex gap-3 craft">
-            <Link href="/linkedin">Linkedin</Link>
+            <Link href="/linkedin">LinkedIn</Link>
             <Link href="/resume">Resume</Link>
             <a href="mailto:rileighellison12@gmail.com">Email</a>
           </div>
