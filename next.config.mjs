@@ -14,11 +14,6 @@ const nextConfig = {
         destination: 'https://resume.rileigh.me',
         permanent: true,
       },
-      {
-        source: '/email',
-        destination: 'mailto:rileighellison12@gmail.com',
-        permanent: true,
-      },
     ]
   },
 }

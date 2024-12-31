@@ -66,7 +66,7 @@ const Footer = () => {
           <div className="flex gap-3 craft">
             <Link href="/linkedin">Linkedin</Link>
             <Link href="/resume">Resume</Link>
-            <Link href="/email">Email</Link>
+            <a href="mailto:rileighellison12@gmail.com">Email</a>
           </div>
           <p className="text-muted-foreground">© {pay.name}, 2025</p>
         </footer>
