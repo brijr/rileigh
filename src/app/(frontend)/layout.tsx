@@ -60,12 +60,13 @@ const Header = () => {
 
 const Footer = () => {
   return (
-    <Section className="py-6 md:py-6">
+    <Section className="fade-in-up delay-footer py-6 md:py-6">
       <Container className="py-6 md:py-6">
         <footer className="space-y-4 sm:flex sm:justify-between items-center">
           <div className="flex gap-3 craft">
             <Link href="/linkedin">Linkedin</Link>
             <Link href="/resume">Resume</Link>
+            <Link href="/email">Email</Link>
           </div>
           <p className="text-muted-foreground">© {pay.name}, 2025</p>
         </footer>
