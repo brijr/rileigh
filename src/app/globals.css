@@ -65,3 +65,38 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* ANIMATIONS */
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  animation-name: fadeInUp;
+  animation-duration: 700ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.delay-header {
+  animation-delay: 200ms;
+}
+
+.delay-studies {
+  animation-delay: 400ms;
+}
+
+.delay-footer {
+  animation-delay: 600ms;
+}

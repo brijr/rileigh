@@ -47,13 +47,13 @@ const CaseStudyCard = (study: CaseStudy) => {
   return (
     <Link className="grid gap-2 group" href={`/${study.slug}`}>
       <Image
-        className="rounded-md border w-full h-48 object-cover overflow-hidden group-hover:opacity-90"
+        className="rounded-md border w-full h-48 object-cover overflow-hidden group-hover:opacity-90 group-hover:-mt-1 group-hover:mb-1 transition-all"
         src={image.url}
         alt={image.alt}
         width={image.width}
         height={image.height}
       />
-      <h3 className="group-hover:underline underline-offset-4">{study.title}</h3>
+      <h3 className="mt-2 group-hover:underline underline-offset-4">{study.title}</h3>
       <p className="text-sm text-muted-foreground line-clamp-2">{study.summary}</p>
     </Link>
   )
