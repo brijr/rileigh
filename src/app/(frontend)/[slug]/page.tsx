@@ -20,13 +20,13 @@ export default async function Home({ params }: { params: Promise<{ slug: string 
     <Section>
       <Container>
         <article className="grid gap-12">
-          <div className="max-w-xl space-y-8">
+          <div className="max-w-xl space-y-8 fade-in-up delay-header">
             <h2 className="font-medium text-xl">{item.title}</h2>
             <h3 className="text-muted-foreground">{item.summary}</h3>
           </div>
 
           <Image
-            className="w-full h-auto rounded-lg border"
+            className="w-full fade-in-up delay-studies h-auto rounded-lg border"
             src={image.url}
             alt={image.alt}
             width={image.width}
@@ -34,7 +34,7 @@ export default async function Home({ params }: { params: Promise<{ slug: string 
           />
 
           {item.summary && (
-            <Prose>
+            <Prose className="fade-in-up delay-footer">
               <RichText data={item.content} />
             </Prose>
           )}
