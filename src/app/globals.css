@@ -100,3 +100,24 @@
 .delay-footer {
   animation-delay: 600ms;
 }
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0);
+  }
+}
+
+.fade-in-down {
+  opacity: 0;
+  animation-name: fadeInDown;
+  animation-duration: 700ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}

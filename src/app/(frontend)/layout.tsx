@@ -36,7 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
 const Header = () => {
   return (
-    <Container>
+    <Container className="fade-in-down">
       <Link className="hover:opacity-70 transition-all" href="/">
         <svg
           xmlns="http://www.w3.org/2000/svg"
