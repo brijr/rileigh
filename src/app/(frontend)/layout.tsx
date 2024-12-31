@@ -25,36 +25,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={font.className}>
       <body className="min-h-screen">
         <main>
-          <Header />
           {children}
           <Footer />
         </main>
       </body>
     </html>
-  )
-}
-
-const Header = () => {
-  return (
-    <Section className="py-6 md:py-6">
-      <Container className="py-6 md:py-6">
-        <nav className="flex gap-4 justify-between items-center">
-          <h2 className="font-medium">
-            <Link href="/" className="group">
-              {pay.name}
-            </Link>
-          </h2>
-          <div className="flex gap-2">
-            <Button variant="outline" asChild>
-              <a href="https://payloadcms.com/docs">Payload Docs</a>
-            </Button>
-            <Button asChild>
-              <a href="https://github.com/9d8dev/pay">Github</a>
-            </Button>
-          </div>
-        </nav>
-      </Container>
-    </Section>
   )
 }
 
