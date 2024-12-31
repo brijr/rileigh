@@ -279,7 +279,7 @@
     .task-list-item {
       @apply flex items-center;
 
-      input[type="checkbox"] {
+      input[type='checkbox'] {
         @apply mr-2;
       }
     }
@@ -335,6 +335,14 @@
   /* Base element spacing */
   > * + * {
     @apply mt-6;
+  }
+
+  p {
+    @apply mb-3;
+  }
+
+  img {
+    @apply my-6;
   }
 
   /* Lists */

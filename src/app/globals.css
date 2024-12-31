@@ -90,15 +90,15 @@
 }
 
 .delay-header {
-  animation-delay: 200ms;
-}
-
-.delay-studies {
   animation-delay: 400ms;
 }
 
-.delay-footer {
+.delay-studies {
   animation-delay: 600ms;
+}
+
+.delay-footer {
+  animation-delay: 1000ms;
 }
 
 @keyframes fadeInDown {
