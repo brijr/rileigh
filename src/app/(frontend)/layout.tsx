@@ -6,7 +6,6 @@ import { pay } from 'site.config'
 
 import Link from 'next/link'
 
-import { Button } from '@/components/ui/button'
 import { Section, Container } from '@/components/craft'
 
 export const metadata: Metadata = {
@@ -38,9 +37,11 @@ const Footer = () => {
     <Section className="py-6 md:py-6">
       <Container className="py-6 md:py-6">
         <footer className="text-muted-foreground">
-          <p>
-            © {pay.name}, 2025 / made at <a href="https://9d8.dev">9d8</a>
-          </p>
+          <div className="flex gap-3">
+            <Link href="/linkedin">Linkedin</Link>
+            <Link href="/resume">Resume</Link>
+          </div>
+          <p>© {pay.name}, 2025</p>
         </footer>
       </Container>
     </Section>
