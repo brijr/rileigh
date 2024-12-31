@@ -20,7 +20,7 @@ export const getCaseStudyBySlug = cache(async ({ slug }: { slug: string }) => {
   return result.docs?.[0] || null
 })
 
-export const queryAllCaseStudies = cache(async () => {
+export const getAllCaseStudies = cache(async () => {
   const payload = await getPayload({ config: configPromise })
 
   const result = await payload.find({
