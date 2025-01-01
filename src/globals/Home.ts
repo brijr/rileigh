@@ -11,7 +11,7 @@ export const Home: GlobalConfig = {
     {
       name: 'summary',
       label: 'Content',
-      type: 'text',
+      type: 'textarea',
     },
   ],
 }
