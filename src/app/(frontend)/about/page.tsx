@@ -19,21 +19,20 @@ export default async function Index() {
 
 const About = ({ pfp, content }: { pfp: any; content: Props }) => {
   return (
-    <Container className="fade-in-up delay-header">
+    <Container className="space-y-8">
       <div className="max-w-xl space-y-8">
         <Image
-          className="w-full fade-in-up delay-studies h-auto rounded-lg border"
+          className="w-36 h-36 border aspect-square rounded-full object-cover fade-in-up delay-header"
           src={pfp.url}
           alt={pfp.alt}
           width={pfp.width}
           height={pfp.height}
         />
-        <h1 className="text-xl font-medium">{content.title}</h1>
-        <h2 className="text-muted-foreground">{content.id}</h2>
+        <h1 className="text-xl font-medium fade-in-up delay-studies">{content.title}</h1>
       </div>
 
       {content.content && (
-        <Prose className="fade-in-up delay-footer">
+        <Prose className="fade-in-up delay-studies delay-footer">
           <RichText data={content.content} />
         </Prose>
       )}
