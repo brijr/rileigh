@@ -38,9 +38,11 @@ const About = ({ pfp, content }: { pfp: any; content: Props }) => {
         </Prose>
       )}
 
-      <Link href={content.resumeLink}>Resume</Link>
-      <Link href={content.linkedinLink}>LinkedIn</Link>
-      <Link href={content.emailLink}>Email</Link>
+      <div className="grid gap-2">
+        <Link href={content.resumeLink}>Resume</Link>
+        <Link href={content.linkedinLink}>LinkedIn</Link>
+        <Link href={content.emailLink}>Email</Link>
+      </div>
     </Container>
   )
 }
