@@ -5,6 +5,7 @@ import { Prose } from '@/components/craft'
 import { RichText } from '@payloadcms/richtext-lexical/react'
 
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default async function Index() {
   const content = (await getGlobal({ slug: 'about' })) as Props
@@ -28,7 +29,7 @@ const About = ({ pfp, content }: { pfp: any; content: Props }) => {
           width={pfp.width}
           height={pfp.height}
         />
-        <h1 className="text-xl font-medium fade-in-up delay-studies">{content.title}</h1>
+        <h1 className="text-xl sr-only font-medium fade-in-up delay-studies">{content.title}</h1>
       </div>
 
       {content.content && (
@@ -36,6 +37,10 @@ const About = ({ pfp, content }: { pfp: any; content: Props }) => {
           <RichText data={content.content} />
         </Prose>
       )}
+
+      <Link href={content.resumeLink}>Resume</Link>
+      <Link href={content.linkedinLink}>LinkedIn</Link>
+      <Link href={content.emailLink}>Email</Link>
     </Container>
   )
 }

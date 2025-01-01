@@ -25,11 +25,8 @@ const Header = ({ content }: { content: Home }) => {
     <Container className="fade-in-up delay-header">
       <div className="max-w-xl space-y-8">
         <h1 className="text-xl font-medium">{content.title}</h1>
-        <h2 className="text-muted-foreground">
-          {content.summary}{' '}
-          <Link className="craft" href="/about">
-            More about me.
-          </Link>
+        <h2 className="text-muted-foreground craft">
+          {content.summary} <Link href="/about">More about me</Link>.
         </h2>
       </div>
     </Container>
