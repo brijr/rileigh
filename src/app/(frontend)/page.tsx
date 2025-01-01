@@ -1,5 +1,7 @@
 import { Section, Container } from '@/components/craft'
 import { getAllCaseStudies } from '@/lib/data'
+import { getGlobal } from '@/lib/data'
+import { Home } from '@/payload-types'
 import { CaseStudy } from '@/payload-types'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -8,24 +10,22 @@ export const revalidate = 600
 
 export default async function Index() {
   const data: CaseStudy[] = await getAllCaseStudies()
+  const content: Home = await getGlobal({ slug: 'home' })
 
   return (
     <Section>
-      <Header />
+      <Header content={content} />
       <CaseStudies data={data} />
     </Section>
   )
 }
 
-const Header = () => {
+const Header = ({ content }: { content: Home }) => {
   return (
     <Container className="fade-in-up delay-header">
       <div className="max-w-xl space-y-8">
-        <h1 className="text-xl font-medium">Rileigh Tower</h1>
-        <h2 className="text-muted-foreground">
-          UX Researcher and Anthropologist based in the Utah. Passionate about creating accessible,
-          intuitive, and inclusive digital experiences based on user insights.
-        </h2>
+        <h1 className="text-xl font-medium">{content.title}</h1>
+        <h2 className="text-muted-foreground">{content.summary}</h2>
       </div>
     </Container>
   )
