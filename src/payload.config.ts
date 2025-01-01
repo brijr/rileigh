@@ -39,7 +39,7 @@ export default buildConfig({
       connectionString: process.env.DATABASE_URI || '',
     },
   }),
-  sharp,
+  // sharp,
   plugins: [
     payloadCloudPlugin(),
     s3Storage({
