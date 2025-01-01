@@ -31,3 +31,15 @@ export const getAllCaseStudies = cache(async () => {
 
   return result.docs || []
 })
+
+export const getGlobal = cache(async ({ slug }: { slug: 'home' | 'about' }) => {
+  const payload = await getPayload({ config: configPromise })
+
+  const result = await payload.findGlobal({
+    slug: `${slug}`,
+    depth: 2,
+    fallbackLocale: false,
+  })
+
+  return result || null
+})
