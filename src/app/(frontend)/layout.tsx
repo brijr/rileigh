@@ -6,6 +6,8 @@ import type { Metadata } from 'next'
 import { pay } from 'site.config'
 
 import Link from 'next/link'
+import Image from 'next/image'
+import Logo from '@/public/logo.svg'
 
 import { Section, Container } from '@/components/craft'
 
@@ -38,21 +40,7 @@ const Header = () => {
   return (
     <Container className="fade-in-down">
       <Link className="hover:opacity-70 transition-all" href="/">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <path d="M12 22V8" />
-          <path d="M5 12H2a10 10 0 0 0 20 0h-3" />
-          <circle cx="12" cy="5" r="3" />
-        </svg>
+        <Image src={Logo} alt="Logo" width={24} height={24} />
       </Link>
     </Container>
   )
