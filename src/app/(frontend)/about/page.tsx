@@ -7,6 +7,8 @@ import { RichText } from '@payloadcms/richtext-lexical/react'
 import Image from 'next/image'
 import Link from 'next/link'
 
+export const revalidate = 600
+
 export default async function Index() {
   const content = (await getGlobal({ slug: 'about' })) as Props
   const pfp: any = content.profileImage
