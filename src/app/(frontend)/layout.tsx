@@ -40,7 +40,7 @@ const Header = () => {
   return (
     <Container className="fade-in-down">
       <Link className="hover:opacity-70 transition-all" href="/">
-        <Image src={Logo} alt="Logo" width={24} height={24} />
+        <Image src={Logo} alt="Logo" width={36} height={36} />
       </Link>
     </Container>
   )
