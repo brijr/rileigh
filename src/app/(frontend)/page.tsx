@@ -49,7 +49,7 @@ const CaseStudyCard = (study: CaseStudy) => {
   return (
     <Link className="grid gap-2 group" href={`/${study.slug}`}>
       <Image
-        className="rounded-md border w-full h-48 object-cover overflow-hidden group-hover:opacity-90 group-hover:-mt-1 group-hover:mb-1 transition-all"
+        className="rounded-md border w-full aspect-[4/3] object-cover overflow-hidden group-hover:opacity-90 group-hover:-mt-1 group-hover:mb-1 transition-all"
         src={image.url}
         alt={image.alt}
         width={image.width}
