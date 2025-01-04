@@ -38,7 +38,7 @@ const About = ({ pfp, content }: { pfp: any; content: Props }) => {
         </Prose>
       )}
 
-      <div className="grid gap-2">
+      <div className="grid gap-2 fade-in-up delay-footer">
         <Link href={content.resumeLink}>Resume</Link>
         <Link href={content.linkedinLink}>LinkedIn</Link>
         <Link href={content.emailLink}>Email</Link>
