@@ -35,7 +35,7 @@ const Header = ({ content }: { content: Home }) => {
 
 const CaseStudies = ({ data }: { data: CaseStudy[] }) => {
   return (
-    <Container className="fade-in-up delay-studies grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <Container className="fade-in-up delay-studies grid sm:grid-cols-2 gap-6">
       {data.map((study, index) => (
         <CaseStudyCard {...study} key={study.id || index} />
       ))}
