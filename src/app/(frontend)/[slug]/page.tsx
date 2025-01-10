@@ -3,14 +3,11 @@ import { notFound } from 'next/navigation'
 import { RichText } from '@payloadcms/richtext-lexical/react'
 import { Section, Container, Prose } from '@/components/craft'
 
-import Image from 'next/image'
-
 export const revalidate = 600
 
 export default async function Home({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
   const item = await getCaseStudyBySlug({ slug })
-  const image: any = item?.featuredImage
 
   if (!item) {
     return notFound()
@@ -24,14 +21,6 @@ export default async function Home({ params }: { params: Promise<{ slug: string 
             <h2 className="font-medium text-xl">{item.title}</h2>
             <h3 className="text-muted-foreground">{item.summary}</h3>
           </div>
-
-          <Image
-            className="w-full fade-in-up delay-studies h-auto rounded-lg border"
-            src={image.url}
-            alt={image.alt}
-            width={image.width}
-            height={image.height}
-          />
 
           {item.summary && (
             <Prose className="fade-in-up delay-footer">
