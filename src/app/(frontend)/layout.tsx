@@ -4,6 +4,7 @@ import '@/components/craft/craft.css'
 import { Manrope as Font } from 'next/font/google'
 import type { Metadata } from 'next'
 import { pay } from 'site.config'
+import { Analytics } from '@vercel/analytics/react'
 
 import Link from 'next/link'
 import Image from 'next/image'
@@ -31,6 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
           <Footer />
         </main>
+        <Analytics />
       </body>
     </html>
   )
